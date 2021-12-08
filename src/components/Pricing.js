@@ -1,6 +1,7 @@
 import React from "react";
 
 const Pricing = () => {
+  const changeSliderValue = (e) => {};
   return (
     <div className="Pricing">
       <div className="price-req">
@@ -10,7 +11,13 @@ const Pricing = () => {
         </p>
       </div>
       <div className="slide">
-        <input type="range" min="0" max="200" value="100" />
+        <input
+          type="range"
+          min="0"
+          max="200"
+          value="100"
+          onChange={changeSliderValue}
+        />
       </div>
       <div className="billing">
         <p>Monthly Billing</p>
