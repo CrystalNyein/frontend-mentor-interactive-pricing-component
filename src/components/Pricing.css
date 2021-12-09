@@ -17,6 +17,7 @@
 .price-req p {
   color: hsl(225, 20%, 60%);
   margin: 0;
+  font-weight: 800;
 }
 #pageview {
   text-transform: uppercase;
