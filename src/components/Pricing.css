@@ -154,8 +154,38 @@ input:checked + .toggle::before {
   left: 1.6rem;
 }
 hr {
-  margin: 0 -3rem;
+  margin: 0 -3rem 2rem;
   height: 1px;
   border: none;
   background-color: hsl(227, 100%, 95%);
+}
+.trial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  margin: 0;
+  padding-left: 1.8rem;
+}
+li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: hsl(225, 20%, 60%);
+  position: relative;
+}
+li:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+li::before {
+  position: absolute;
+  top: 0.2rem;
+  left: -1.8rem;
+  content: "";
+  background-image: url("../assets/images/icon-check.svg");
+  background-position: center;
+  background-size: cover;
+  width: 0.8rem;
+  height: 0.8rem;
 }
