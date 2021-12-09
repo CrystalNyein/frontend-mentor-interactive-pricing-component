@@ -169,13 +169,15 @@ hr {
 }
 ul {
   margin: 0;
-  padding-left: 1.8rem;
+  padding-left: 0;
+  list-style-position: inside;
 }
 li {
   list-style-type: none;
   font-size: 0.8rem;
   font-weight: 800;
   color: hsl(225, 20%, 60%);
+  padding-left: 1.8rem;
   position: relative;
 }
 li:not(:last-child) {
@@ -184,7 +186,7 @@ li:not(:last-child) {
 li::before {
   position: absolute;
   top: 0.2rem;
-  left: -1.8rem;
+  left: 0;
   content: "";
   background-image: url("../assets/images/icon-check.svg");
   background-position: center;
@@ -203,4 +205,46 @@ li::before {
 }
 .trial-btn:hover {
   color: white;
+}
+@media only screen and (max-width: 540px) {
+  .Pricing {
+    padding: 2rem;
+  }
+  #pageview,
+  #price {
+    width: 100%;
+    text-align: center;
+  }
+  #price {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .slide {
+    order: unset;
+  }
+  .billing p:first-child {
+    margin-left: 1rem;
+  }
+  .trial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .benefits {
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    list-style-position: inside;
+  }
+  li:last-child {
+    margin-bottom: 2rem;
+  }
+  li::before {
+    left: 0;
+  }
+  .trial-btn {
+    text-align: center;
+  }
 }

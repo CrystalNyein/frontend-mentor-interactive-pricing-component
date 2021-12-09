@@ -79,11 +79,13 @@ const Pricing = () => {
       </div>
       <hr></hr>
       <div className="trial">
-        <ul className="benefits">
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ul>
+        <div className="benefits">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+        </div>
         <button className="trial-btn">Start my trial</button>
       </div>
     </div>
