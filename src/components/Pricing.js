@@ -1,26 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Pricing.css";
 
-const Pricing = () => {
+const Pricing = (props) => {
   const selectorRef = useRef(null);
   const progressRef = useRef(null);
   const [sliderValue, setSliderValue] = useState(50);
   const [monthlyPrice, setMonthlyPrice] = useState(sliderValue / 3.125);
   const [monthly, setMonthly] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const changeSliderValue = (e) => {
     setSliderValue(e.target.value);
     setMonthlyPrice(e.target.value / 3.125);
     selectorRef.current.style.left = e.target.value + "%";
     progressRef.current.style.width = e.target.value + "%";
   };
-  useEffect(() => {
-    const resizeWidth = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", resizeWidth);
-    return () => window.removeEventListener("resize", resizeWidth);
-  });
   return (
     <div className="Pricing">
       <div className="price-req">
@@ -74,7 +67,10 @@ const Pricing = () => {
         </label>
         <p>
           Yearly Billing
-          <span id="discount"> 25% {windowWidth > 540 && "discount"}</span>
+          <span id="discount">
+            {" "}
+            25% {props.windowWidth > 540 && "discount"}
+          </span>
         </p>
       </div>
       <hr></hr>
