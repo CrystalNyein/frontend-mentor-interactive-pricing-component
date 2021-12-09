@@ -176,7 +176,7 @@ li {
   position: relative;
 }
 li:not(:last-child) {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.85rem;
 }
 li::before {
   position: absolute;
