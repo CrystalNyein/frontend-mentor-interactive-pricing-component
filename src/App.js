@@ -14,7 +14,9 @@ const App = () => {
   });
   return (
     <main className="App">
-      <h1>Simple, traffic-based pricing </h1>
+      <h1>
+        Simple, traffic-based pricing <span className="circle-pattern"></span>
+      </h1>
       <h2>
         Sign-up for our 30-day trial.{windowWidth < 540 && <br />} No credit
         card required.
