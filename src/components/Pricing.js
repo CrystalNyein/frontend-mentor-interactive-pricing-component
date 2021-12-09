@@ -55,7 +55,14 @@ const Pricing = () => {
       </div>
       <div className="billing">
         <p>Monthly Billing</p>
-        <button id="toggle-btn"></button>
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={!monthly}
+            onChange={() => setMonthly(!monthly)}
+          ></input>
+          <div className="toggle"></div>
+        </label>
         <p>
           Yearly Billing<span id="discount"> 25% discount</span>
         </p>
