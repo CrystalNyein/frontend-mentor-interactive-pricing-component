@@ -20,15 +20,16 @@ const Pricing = (props) => {
         <p id="pageview">{sliderValue * 2}K Pageviews</p>
 
         <div className="slide">
-          <label for="slider">Slider</label>
-          <input
-            id="slider"
-            type="range"
-            min="0"
-            max="100"
-            value={sliderValue}
-            onChange={changeSliderValue}
-          />
+          <label>
+            <input
+              id="slider"
+              type="range"
+              min="0"
+              max="100"
+              value={sliderValue}
+              onChange={changeSliderValue}
+            />
+          </label>
           <div id="selector" ref={selectorRef}>
             <svg
               className="select-btn"
