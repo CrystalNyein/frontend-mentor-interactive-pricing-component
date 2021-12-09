@@ -33,7 +33,7 @@
   color: black;
 }
 .slide {
-  flex-grow: 1;
+  width: 100%;
   order: 3;
   position: relative;
   height: 2rem;
