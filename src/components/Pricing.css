@@ -208,6 +208,7 @@ li::before {
 }
 @media only screen and (max-width: 540px) {
   .Pricing {
+    margin-top: 2rem;
     padding: 2rem;
   }
   #pageview,
