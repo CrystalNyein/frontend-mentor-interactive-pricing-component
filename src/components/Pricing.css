@@ -1,8 +1,8 @@
 .Pricing {
-  margin-top: 5rem;
+  margin: 5rem auto 0;
   padding: 3rem;
   width: 35rem;
-  max-width: 90vw;
+  max-width: calc(90vw - 6rem);
   background-color: white;
   box-shadow: 3px 3px 20px hsl(227, 100%, 95%);
   border-radius: 0.5rem;
@@ -209,8 +209,9 @@ li::before {
 }
 @media only screen and (max-width: 540px) {
   .Pricing {
-    margin-top: 2rem;
-    padding: 2rem;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    max-width: calc(95vw - 2rem);
   }
   #pageview,
   #price {
@@ -224,8 +225,11 @@ li::before {
   .slide {
     order: unset;
   }
+  .billing {
+    gap: 0.5rem;
+  }
   .billing p:first-child {
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .trial {
     display: flex;
@@ -239,6 +243,10 @@ li::before {
   ul {
     display: inline-block;
     list-style-position: inside;
+    width: 70%;
+  }
+  li {
+    display: inline-block;
   }
   li:last-child {
     margin-bottom: 2rem;
