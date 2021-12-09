@@ -20,6 +20,7 @@ const Pricing = (props) => {
         <p id="pageview">{sliderValue * 2}K Pageviews</p>
 
         <div className="slide">
+          <label for="slider">Slider</label>
           <input
             id="slider"
             type="range"
@@ -63,7 +64,7 @@ const Pricing = (props) => {
             checked={!monthly}
             onChange={() => setMonthly(!monthly)}
           ></input>
-          <div className="toggle"></div>
+          <span className="toggle"></span>
         </label>
         <p>
           Yearly Billing
