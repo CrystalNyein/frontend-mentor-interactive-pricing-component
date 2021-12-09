@@ -17,6 +17,30 @@ const Pricing = () => {
     <div className="Pricing">
       <div className="price-req">
         <p id="pageview">{sliderValue * 2}K Pageviews</p>
+
+        <div className="slide">
+          <input
+            id="slider"
+            type="range"
+            min="0"
+            max="100"
+            value={sliderValue}
+            onChange={changeSliderValue}
+          />
+          <div id="selector" ref={selectorRef}>
+            <svg
+              className="select-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="13"
+            >
+              <g fill="#80FFF3" fillRule="evenodd">
+                <path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z" />
+              </g>
+            </svg>
+          </div>
+          <div id="progress-bar" ref={progressRef}></div>
+        </div>
         {monthly ? (
           <p id="price">
             <span>${monthlyPrice.toFixed(2)} </span>/ month
@@ -29,29 +53,6 @@ const Pricing = () => {
             / year
           </p>
         )}
-      </div>
-      <div className="slide">
-        <input
-          id="slider"
-          type="range"
-          min="0"
-          max="100"
-          value={sliderValue}
-          onChange={changeSliderValue}
-        />
-        <div id="selector" ref={selectorRef}>
-          <svg
-            className="select-btn"
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="13"
-          >
-            <g fill="#80FFF3" fillRule="evenodd">
-              <path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z" />
-            </g>
-          </svg>
-        </div>
-        <div id="progress-bar" ref={progressRef}></div>
       </div>
       <div className="billing">
         <p>Monthly Billing</p>
