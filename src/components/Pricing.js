@@ -55,9 +55,10 @@ const Pricing = () => {
       </div>
       <div className="billing">
         <p>Monthly Billing</p>
-        <button></button>
-        <p>Yearly Billing</p>
-        <p>25% discount</p>
+        <button id="toggle-btn"></button>
+        <p>
+          Yearly Billing<span id="discount"> 25% discount</span>
+        </p>
       </div>
       <hr></hr>
       <div className="trial">
