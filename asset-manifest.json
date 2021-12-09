@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/frontend-mentor-interactive-pricing-component/static/css/main.e102f46d.chunk.css",
-    "main.js": "/frontend-mentor-interactive-pricing-component/static/js/main.70a58121.chunk.js",
-    "main.js.map": "/frontend-mentor-interactive-pricing-component/static/js/main.70a58121.chunk.js.map",
+    "main.js": "/frontend-mentor-interactive-pricing-component/static/js/main.7b839ccd.chunk.js",
+    "main.js.map": "/frontend-mentor-interactive-pricing-component/static/js/main.7b839ccd.chunk.js.map",
     "runtime-main.js": "/frontend-mentor-interactive-pricing-component/static/js/runtime-main.3834adb0.js",
     "runtime-main.js.map": "/frontend-mentor-interactive-pricing-component/static/js/runtime-main.3834adb0.js.map",
     "static/js/2.75c9023f.chunk.js": "/frontend-mentor-interactive-pricing-component/static/js/2.75c9023f.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.3834adb0.js",
     "static/js/2.75c9023f.chunk.js",
     "static/css/main.e102f46d.chunk.css",
-    "static/js/main.70a58121.chunk.js"
+    "static/js/main.7b839ccd.chunk.js"
   ]
 }
