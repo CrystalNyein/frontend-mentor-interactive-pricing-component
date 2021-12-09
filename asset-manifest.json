@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor-interactive-pricing-component/static/css/main.f8450552.chunk.css",
+    "main.js": "/frontend-mentor-interactive-pricing-component/static/js/main.6943d86b.chunk.js",
+    "main.js.map": "/frontend-mentor-interactive-pricing-component/static/js/main.6943d86b.chunk.js.map",
+    "runtime-main.js": "/frontend-mentor-interactive-pricing-component/static/js/runtime-main.3834adb0.js",
+    "runtime-main.js.map": "/frontend-mentor-interactive-pricing-component/static/js/runtime-main.3834adb0.js.map",
+    "static/js/2.75c9023f.chunk.js": "/frontend-mentor-interactive-pricing-component/static/js/2.75c9023f.chunk.js",
+    "static/js/2.75c9023f.chunk.js.map": "/frontend-mentor-interactive-pricing-component/static/js/2.75c9023f.chunk.js.map",
+    "static/js/3.cd62fa0c.chunk.js": "/frontend-mentor-interactive-pricing-component/static/js/3.cd62fa0c.chunk.js",
+    "static/js/3.cd62fa0c.chunk.js.map": "/frontend-mentor-interactive-pricing-component/static/js/3.cd62fa0c.chunk.js.map",
+    "index.html": "/frontend-mentor-interactive-pricing-component/index.html",
+    "static/css/main.f8450552.chunk.css.map": "/frontend-mentor-interactive-pricing-component/static/css/main.f8450552.chunk.css.map",
+    "static/js/2.75c9023f.chunk.js.LICENSE.txt": "/frontend-mentor-interactive-pricing-component/static/js/2.75c9023f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/frontend-mentor-interactive-pricing-component/static/media/bg-pattern.76d3fa7d.svg",
+    "static/media/Pricing.css": "/frontend-mentor-interactive-pricing-component/static/media/icon-check.83c38a48.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3834adb0.js",
+    "static/js/2.75c9023f.chunk.js",
+    "static/css/main.f8450552.chunk.css",
+    "static/js/main.6943d86b.chunk.js"
+  ]
+}
