@@ -13,9 +13,9 @@ const Pricing = () => {
   return (
     <div className="Pricing">
       <div className="price-req">
-        <p id="pageview">Pageviews</p>
+        <p id="pageview">{sliderValue * 2}K Pageviews</p>
         <p id="price">
-          <span>$ </span> /month
+          <span>${(sliderValue / 3.125).toFixed(2)} </span>/month
         </p>
       </div>
       <div className="slide">
