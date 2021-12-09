@@ -208,6 +208,9 @@ li::before {
   color: white;
 }
 @media only screen and (max-width: 540px) {
+  html {
+    font-size: 14px;
+  }
   .Pricing {
     margin: 2rem auto 0;
     padding: 1rem;
