@@ -5,8 +5,11 @@ const Pricing = () => {
   const selectorRef = useRef(null);
   const progressRef = useRef(null);
   const [sliderValue, setSliderValue] = useState(50);
+  const [monthlyPrice, setMonthlyPrice] = useState(sliderValue / 3.125);
+  const [monthly, setMonthly] = useState(false);
   const changeSliderValue = (e) => {
     setSliderValue(e.target.value);
+    setMonthlyPrice(e.target.value / 3.125);
     selectorRef.current.style.left = e.target.value + "%";
     progressRef.current.style.width = e.target.value + "%";
   };
@@ -14,9 +17,18 @@ const Pricing = () => {
     <div className="Pricing">
       <div className="price-req">
         <p id="pageview">{sliderValue * 2}K Pageviews</p>
-        <p id="price">
-          <span>${(sliderValue / 3.125).toFixed(2)} </span>/month
-        </p>
+        {monthly ? (
+          <p id="price">
+            <span>${monthlyPrice.toFixed(2)} </span>/ month
+          </p>
+        ) : (
+          <p id="price">
+            <span>
+              ${(monthlyPrice * 12 - monthlyPrice * 12 * 0.25).toFixed(2)}{" "}
+            </span>
+            / year
+          </p>
+        )}
       </div>
       <div className="slide">
         <input
